@@ -1,0 +1,25 @@
+const truthList = [
+  "Tumhara crush kaun hai?",
+  "Last jhoot kya bola?",
+  "Sabse embarrassing moment?",
+  "Kisi ko secretly stalk kiya?",
+  "Apna biggest secret batao"
+];
+
+const dareList = [
+  "20 pushups karo",
+  "Kisi friend ko I Love You bolo 😂",
+  "10 sec dance karo",
+  "Funny face selfie lo",
+  "Gaana gaake sunao"
+];
+
+function getTruth() {
+  const random = Math.floor(Math.random() * truthList.length);
+  document.getElementById("result").innerText = truthList[random];
+}
+
+function getDare() {
+  const random = Math.floor(Math.random() * dareList.length);
+  document.getElementById("result").innerText = dareList[random];
+}
